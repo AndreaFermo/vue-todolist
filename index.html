@@ -4,12 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/style.css" rel="stylesheet" />
    
 </head>
 <body>
-    <div id="app">{{ message }}</div>
+    <div id="app">
+        <div class="container">
+            <div class="newTask textCenter">
+                <input type="text" placeholder="inserisci qualcosa alla lista">
+                <button>AGGIUNGI</button>
+            </div>
+            <div class="toDoList">
+                <ul>
+                    <li><span class="toDoText">metti qui qualcosa</span><i class="fa-sharp fa-solid fa-xmark"></i></li>
+                </ul>
+                <h3>Aggiungi attività da svolgere!</h3>
+            </div>
+        </div>
+    </div>
     
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
