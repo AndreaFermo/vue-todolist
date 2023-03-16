@@ -18,7 +18,7 @@
             </div>
             <div class="toDoList">
                 <ul v-if="list.length > 0">
-                    <li v-for="element in list" :class="(element.done == true)?'crossed':'' "><span class="toDoText">{{element.text}}</span><i class="fa-sharp fa-solid fa-xmark"></i></li>
+                    <li v-for="(element, index) in list" :class="(element.done == true)?'crossed':'' "><span class="toDoText">{{element.text}}</span><i @click="removeElement(index)" class="fa-sharp fa-solid fa-xmark"></i></li>
                 </ul>
                 <h3 v-else>Aggiungi attività da svolgere!</h3>
             </div>

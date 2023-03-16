@@ -18,5 +18,10 @@ createApp({
         },
       ],
     }
+  },
+  methods: {
+    removeElement(index) {
+        this.list.splice(index, 1);
+    },
   }
 }).mount('#app')
