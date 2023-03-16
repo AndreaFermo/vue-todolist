@@ -39,6 +39,10 @@
     display: flex;
     border-bottom: 1px solid #aaa;
 }
+.toDoList ul li:hover{
+    background-color: #ddd;
+    cursor: pointer;
+}
 
 .toDoText {
     flex-grow: 1;

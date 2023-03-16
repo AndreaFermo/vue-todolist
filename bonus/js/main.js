@@ -10,7 +10,7 @@ createApp({
             },
             {
                 text: 'Ottenere arma',
-                done: true
+                done: false
             },
             {
                 text: 'Livellare equipaggiamento',
@@ -37,6 +37,13 @@ createApp({
         } else {
             this.error = true;
         }
+    },
+    trueFalse(index) {
+        if (this.list[index].done == false){
+            this.list[index].done = true; 
+        } else {
+            this.list[index].done = false;
+        } 
     }
   }
 }).mount('#app')
