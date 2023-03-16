@@ -13,8 +13,9 @@
     <div id="app">
         <div class="container">
             <div class="newTask textCenter">
-                <input type="text" placeholder="Inserisci qualcosa nella lista">
-                <button>AGGIUNGI</button>
+                <input type="text" placeholder="Inserisci qualcosa nella lista" v-model="newElement.text">
+                <button @click="addElement()">AGGIUNGI</button>
+                <div v-show="error">Inserisci un testo di almeno 5 lettere!</div>
             </div>
             <div class="toDoList">
                 <ul v-if="list.length > 0">
