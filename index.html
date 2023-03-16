@@ -13,12 +13,12 @@
     <div id="app">
         <div class="container">
             <div class="newTask textCenter">
-                <input type="text" placeholder="inserisci qualcosa alla lista">
+                <input type="text" placeholder="Inserisci qualcosa nella lista">
                 <button>AGGIUNGI</button>
             </div>
             <div class="toDoList">
                 <ul v-if="list.length > 0">
-                    <li v-for="element in list"><span class="toDoText">{{element.text}}</span><i class="fa-sharp fa-solid fa-xmark"></i></li>
+                    <li v-for="element in list" :class="(element.done == true)?'crossed':'' "><span class="toDoText">{{element.text}}</span><i class="fa-sharp fa-solid fa-xmark"></i></li>
                 </ul>
                 <h3 v-else>Aggiungi attività da svolgere!</h3>
             </div>

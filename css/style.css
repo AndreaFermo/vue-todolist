@@ -43,3 +43,7 @@
 .toDoText {
     flex-grow: 1;
 }
+
+.crossed {
+    text-decoration: line-through;
+}
