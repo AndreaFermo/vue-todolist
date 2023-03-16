@@ -38,11 +38,11 @@ createApp({
             this.error = true;
         }
     },
-    trueFalse(index) {
-        if (this.list[index].done == false){
-            this.list[index].done = true; 
+    trueFalse(element) {
+        if (element.done == false){
+            element.done = true; 
         } else {
-            this.list[index].done = false;
+            element.done = false;
         } 
     }
   }

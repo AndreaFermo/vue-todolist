@@ -19,7 +19,7 @@
             </div>
             <div class="toDoList">
                 <ul v-if="list.length > 0">
-                    <li v-for="(element, index) in list" :class="(element.done == true)?'crossed':'' " @click="trueFalse(index)">
+                    <li v-for="(element, index) in list" :class="(element.done == true)?'crossed':'' " @click="trueFalse(element)">
                         <span class="toDoText">{{element.text}}</span>
                         <i @click="removeElement(index)" class="fa-sharp fa-solid fa-xmark"></i>
                     </li>
